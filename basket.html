@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basket</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+      <div class="topbar" role="navigation">
+        <div class="topbar__wrapper">
+            <div class="topbar__logo">
+                <h1>ShopeeShop</h1>
+                <a href="index.html">
+                  <img class="image1" src="shop.png" alt="shop">
+                </a>
+            </div>
+            <div class="topbar__items" role="list">
+                <a class="topbar__item topbar__item--curent"href="index.html">Products</a>
+                <a class="topbar__item" href="orders.html">Orders</a>
+            </div>
+            <a href="basket.html">
+                <img class="image1" src="cart.png" alt="shop">
+            </a>
+        </div>
+    </div>
+
+    <div class="conte">       
+      <div class="basket__left">
+        <h2 class="basket__title">There is your basket!</h2>
+
+        <table class="basket__retrieve" id="basket__retrieve">
+
+        </table>
+        
+        
+        
+      </div>
+        <div class="basket__right">
+          <h2 class="basket__formtitle">Form:</h2>
+            <form class="basket__form">
+              <label for="payment">Payment:</label><br>
+              <input type="radio" id="paypal" name="fav_payment" value="Paypal">
+              <label for="paypal">Paypal</label><br>
+              <input type="radio" id="receipt" name="fav_payment" value="Upon receipt">
+              <label for="receipt">Upon receipt</label><br>
+              <input type="radio" id="Blik" name="fav_payment" value="Blik">
+              <label for="Blik">Blik</label><br>
+              <label for="fname">City:</label><br>
+              <input type="text" id="city" name="city" value="city"><br>
+              <label for="country">Country:</label><br>
+              <input type="text" id="country" name="country" value="country"><br>
+              <label for="fname">Street:</label><br>
+              <input type="text" id="street" name="street" value="street"><br>
+              <label for="homeNumber">Home number:</label><br>
+              <input type="text" id="homeNumber" name="homeNumber" value="home number"><br>
+              <input type="submit" value="Submit">
+            </form>
+        </div>
+      </div>
+  
+      <footer class="footer">@ShopeeShop - 2022</footer>
+      <script src="js/productInBasket.js"></script>
+    </body>
+
+
+</html>
