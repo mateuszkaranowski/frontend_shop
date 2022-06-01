@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Basket</title>
         <link href="style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,9 +20,13 @@
                 <a class="topbar__item topbar__item--curent"href="index.html">Products</a>
                 <a class="topbar__item" href="orders.html">Orders</a>
             </div>
-            <a href="basket.html">
+            <div class="topbar__items" role="list">
+              <a class="topbar__item" href="register.html">Sign up</a>
+              <a class="topbar__item" href="login.html">Log in</a>
+              <a href="basket.html">
                 <img class="image1" src="cart.png" alt="shop">
-            </a>
+              </a>
+            </div>
         </div>
     </div>
 
@@ -45,15 +50,15 @@
               <input type="radio" id="receipt" name="fav_payment" value="Upon receipt">
               <label for="receipt">Upon receipt</label><br>
               <input type="radio" id="Blik" name="fav_payment" value="Blik">
-              <label for="Blik">Blik</label><br>
+              <label class="basket__form--space" for="Blik">Blik</label><br><br>
               <label for="fname">City:</label><br>
-              <input type="text" id="city" name="city" value="city"><br>
+              <input class="form__input" type="text" id="city" name="city"><br>
               <label for="country">Country:</label><br>
-              <input type="text" id="country" name="country" value="country"><br>
+              <input class="form__input" type="text" id="country" name="country"><br>
               <label for="fname">Street:</label><br>
-              <input type="text" id="street" name="street" value="street"><br>
+              <input class="form__input" type="text" id="street" name="street"><br>
               <label for="homeNumber">Home number:</label><br>
-              <input type="text" id="homeNumber" name="homeNumber" value="home number"><br>
+              <input class="form__input" type="text" id="homeNumber" name="homeNumber"><br>
               <input type="submit" value="Submit">
             </form>
         </div>

@@ -25,9 +25,11 @@ retrieveProductsInBasket()
                 </div>
               </td>
               <td><img class="image__remove" src="remove.png" alt="remove"></td>
+              <td><img class="image__minus" src="minus.png" alt="remove"></td>
+              <td><input type="number"></td>
+
               <td><img class="image__add" src="add.png" alt="alt"></td>
             </tr>
           `
-            
         });
     })

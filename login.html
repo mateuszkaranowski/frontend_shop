@@ -1,9 +1,7 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Products</title>
+        <title>Log in</title>
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
@@ -16,36 +14,36 @@
                     </a>
                 </div>
                 <div class="topbar__items" role="list">
-                    <a class="topbar__item topbar__item--curent"href="index.html">Products</a>
+                    <a class="topbar__item"href="index.html">Products</a>
                     <a class="topbar__item" href="orders.html">Orders</a>
                 </div>
-                <form class="topbar__items" onsubmit="return search()">
-                        <input class="topbar__item" id="search_input" type="text" placeholder="Type to search..."/>
-                        <input class="topbar__item" type="submit" value="Search">
-
-                </form>
                 <div class="topbar__items" role="list">
                     <a class="topbar__item" href="register.html">Sign up</a>
-                    <a class="topbar__item" href="login.html">Log in</a>
+                    <a class="topbar__item topbar__item--curent" href="login.html">Log in</a>
                     <a href="basket.html">
                         <img class="image1" src="cart.png" alt="shop">    
                     </a>
                 </div>
             </div>
-
-        </div>       
-
-        <div class="products">
-            <h2 class="products__title">Here you can find all products!</h2>
-            
-            <div class="products__wrapper" id="products__wrapper">
+        </div>    
+        
+        <div class="login">
+            <div class="login__passwd">
+                <form class="login__content">
+                <h3 class="login__title">Log in</h3>
+                
+                <p>Username:</p>
+                <input class="form__login" type="text" id="country" name="country"><br>
+                <p>Password:</p>
+                <input class="form__login" type="text" id="country" name="country"><br>
+                <h5>You don't have account?<a class="register__href" href="register.html"> Register</a> now here</h5>
+                <p class="form_buttonLogIn" role="button">Log in</p>
+                </form>
             </div>
         </div>
 
-        
 
         <footer class="footer">@ShopeeShop - 2022</footer>
-        <script src="js/productService.js"></script>
     </body>
 
 
